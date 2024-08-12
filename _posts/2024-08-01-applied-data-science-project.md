@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Name
+author: Jieying Lan
 title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
