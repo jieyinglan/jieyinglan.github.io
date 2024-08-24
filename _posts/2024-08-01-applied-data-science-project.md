@@ -184,7 +184,7 @@ From AI Singapore Community Code of Conduct, transparency is one of the six AI p
 
 In this project, Decision Tree has been selected as the alternative model under the overall group conclusion. Reason being of the model interpretability where it allows us to explain how different features i.e. ‘loves_count’ and ‘sentiment_score’ has contribute to the prediction of a best-seller, making the decision-making process more transparent.
 
-** 6. Overall Ethical Considerations**
+**6. Overall Ethical Considerations**
 While in this project did not have direct involvement in handling of sensitive personal data, we need to consider AI ethics at every step, from data preparation to modeling / evaluation. The aim is to create a model that not only performs well whilst adhering to ethical standards at a global level.
 
 
