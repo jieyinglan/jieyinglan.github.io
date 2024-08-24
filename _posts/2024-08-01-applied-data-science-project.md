@@ -194,4 +194,5 @@ While in this project did not have direct involvement in handling of sensitive p
 
 ## Source Codes and Datasets
 Source code uploaded: https://github.com/jieyinglan/ITD214_Project.git
+
 Dataset to download: https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews/data
