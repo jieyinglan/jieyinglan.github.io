@@ -73,15 +73,18 @@ I have experimented with both `sentiment_score` and `loves_count` as variable in
 - Class imbalance distribution of training set on best-seller status (Class 1) and non best-seller status (Class 0). To resolve, apply SMOTE (Synthetic Minority Oversampling Technique) to training set for a balanced distribution.
 Before: 78 samples (imbalanced)
 After: 144 samples (balanced)
+
 ![image](https://github.com/user-attachments/assets/a96588cc-512b-44ff-95b3-ce53609567da)
 
 **- Model Training**
 - All three models were trained on the resampled dataset using key features like product ID, love counts and sentiment score as the goals is to predict the binary outcome whether a Sunscreen product is a best-seller or not.
 
 *- Final output ‘is_best_seller’ column:*
+
 ![image](https://github.com/user-attachments/assets/e87ced52-7e1a-45e1-9d78-79ba39f39798)
 
 - Monitor the relationship between ‘loves_count’ and ‘sentiment_score’ to the best-seller status, ensure that model captured the relevant patterns.
+  
 ![image](https://github.com/user-attachments/assets/e5d2e06e-fecd-42e6-9acb-228e9b26212b)
 
 
@@ -98,11 +101,14 @@ Logistics Regression:
 
 ** Model’s performance using key metrics:**
 The final model which utilized only `sentiment_score`, achieved an accuracy of 70%. This is in contrast to the initial model that included `loves_count`, which had an AUC of 1.0. The decision to exclude `loves_count` was made to avoid overfitting and ensure the model's predictions were reliable and generalizable.
+
 ![image](https://github.com/user-attachments/assets/35266775-5ccb-489f-b226-9b6c075fadc1)
 
 **2. Challenges**
 - Overfitting in Random Forest and Decision Tree models due to small dataset.
+  
 ![image](https://github.com/user-attachments/assets/a66d5719-1dfe-46ee-aa55-2c8d76e9a932)
+
 ![image](https://github.com/user-attachments/assets/47883b64-68a8-4688-a457-5d9477456575)
 
 - Capture noise instead of meaningful patterns.
@@ -111,9 +117,11 @@ The final model which utilized only `sentiment_score`, achieved an accuracy of 7
 **3. Results**
 - Model accuracy: The low precision score from the model performance metric mirrored the realistic imbalance of the best-seller status (Class 1).
 - Logical result: Number of best-sellers is naturally fewer as compared to non-best-sellers is logical (based on domain knowledge).
+  
 ![image](https://github.com/user-attachments/assets/b6b6d11b-4210-4b39-9918-f18b7ba8e376)
 
 - Customer Engagement: Strong correlation between ‘loves_count’ and ‘is_best_seller’ interprets that customer engagement is an important driver of product success.
+  
 ![image](https://github.com/user-attachments/assets/175768af-b1bc-4076-b391-077579c9154e)
 
   
