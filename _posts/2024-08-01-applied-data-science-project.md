@@ -21,7 +21,7 @@ Our group start off the project by researching suitable datasets from Kaggle and
 
 As part of our group effort, we undertake a general approach for Data understanding and Data Cleaning. We performed EDA (Exploratory Data Analysis) such as data structure, use Word Cloud/ Correlation Matrix to further understand common domain words from customer reviews, Data Cleaning by removing duplicates and special characters, handling missing values, and manage outliers. This is to ensure accuracy for subsequent analysis. Feature engineering was conducted by excluding columns such as 'Unnamed: 0', 'total_feedback_count', 'child_max_price', 'child_min_price', 'child_count', 'value_price_usd' and 'sale_price_usd' to eliminate noise and improve model performance.
 
-In this group project, my focus is  on the Sunscreen category segment. By recommending both Random Forest and Decision Tree models, we ensure flexibility to address different business needs. With better prediction, the models will aid Sephora in achieving goals such as increasing sales and improving customer satisfaction.
+In this group project, my focus is  on the Sunscreen category. By recommending both Random Forest and Decision Tree models, we ensure flexibility to address different business needs. With better prediction, the models will aid Sephora in achieving goals such as increasing sales and improving customer satisfaction.
 
 
 ### Data Preparation
@@ -65,7 +65,7 @@ More explainable | Prone to overfitting.
 Simple and straight-forward, easy to explain. 
 Unable to handle non-linear dataset due to linearity of input & output variables.
 
-**- Feature Engineering > Weightage Features**
+**- Feature Engineering**
 I have experimented with both `sentiment_score` and `loves_count` as variable input. The inclusion of `loves_count` led to a perfect accuracy score (AUC = 1.0), which suggested that the model might be overfitting. To avoid this issue and to ensure that the model could generalize better to unseen data, I have decided to exclude `loves_count` and focus solely on `sentiment_score`to provided a more balanced and realistic model performance.
 
 **- Training and Testing Data**
@@ -91,11 +91,11 @@ After: 144 samples (balanced)
 ### Evaluation
 
 **1. Model Performance**
-Random Forest and Decision Tree:
+**Random Forest and Decision Tree:**
 - Both models demonstrated strong performance with an accuracy of 70%.
 - Both struggled with predicting best-seller status due to class imbalance and overfitting issues.
 
-Logistics Regression:
+**Logistics Regression:**
 - Simple and more explainable, while it has low accuracy of 60%.
 - Model struggled to capture non-linear relationships which affects model performance on best-seller prediction.
 
