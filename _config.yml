@@ -6,7 +6,12 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-This project leverage on machine learning algorithm to predict best-selling Sunscreen products based on the sentiments collected from customer reviews and favourite products (loves_count). Utilizing a Sephora Skincare dataset obtain from Kaggle - https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews/data, the project involves data cleaning, feature engineering and application of models such as Random Forest, Decision Tree and Logistic Regression. The project also addresses on AI ethics concerns including privacy, fairness and transparency, ensuring the responsible use of AI in business context and outcome. The results include factors that drives product success to optimize inventory management and enhancing customer satisfaction.
+This project leverage on machine learning algorithm to predict best-selling Sunscreen products based on the sentiments collected 
+from customer reviews and favourite products (loves_count). Utilizing a Sephora Skincare dataset obtain from Kaggle, the project 
+involves data cleaning, feature engineering and application of models such as Random Forest, Decision Tree and Logistic Regression. 
+The project also addresses on AI ethics concerns including privacy, fairness and transparency, ensuring the responsible use of AI 
+in business context and outcome. The results include factors that drives product success to optimize inventory management and 
+enhancing customer satisfaction.
 
 # Build settings
 
