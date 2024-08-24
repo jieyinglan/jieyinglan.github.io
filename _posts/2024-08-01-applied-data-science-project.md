@@ -65,10 +65,10 @@ More explainable | Prone to overfitting.
 Simple and straight-forward, easy to explain. 
 Unable to handle non-linear dataset due to linearity of input & output variables.
 
-**- Feature Engineering**
+**Feature Engineering**
 I have experimented with both `sentiment_score` and `loves_count` as variable input. The inclusion of `loves_count` led to a perfect accuracy score (AUC = 1.0), which suggested that the model might be overfitting. To avoid this issue and to ensure that the model could generalize better to unseen data, I have decided to exclude `loves_count` and focus solely on `sentiment_score`to provided a more balanced and realistic model performance.
 
-**- Training and Testing Data**
+**Training and Testing Data**
 - Split the data into 80/20 for training and testing for learning effectiveness.
 - Class imbalance distribution of training set on best-seller status (Class 1) and non best-seller status (Class 0). To resolve, apply SMOTE (Synthetic Minority Oversampling Technique) to training set for a balanced distribution.
 Before: 78 samples (imbalanced)
@@ -76,7 +76,7 @@ After: 144 samples (balanced)
 
 ![image](https://github.com/user-attachments/assets/a96588cc-512b-44ff-95b3-ce53609567da)
 
-**- Model Training**
+**Model Training**
 - All three models were trained on the resampled dataset using key features like product ID, love counts and sentiment score as the goals is to predict the binary outcome whether a Sunscreen product is a best-seller or not.
 
 *- Final output ‘is_best_seller’ column:*
