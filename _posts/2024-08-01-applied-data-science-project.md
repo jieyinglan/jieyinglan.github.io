@@ -99,7 +99,7 @@ After: 144 samples (balanced)
 - Simple and more explainable, while it has low accuracy of 60%.
 - Model struggled to capture non-linear relationships which affects model performance on best-seller prediction.
 
-** Model’s performance using key metrics:**
+**Model’s performance using key metrics:**
 The final model which utilized only `sentiment_score`, achieved an accuracy of 70%. This is in contrast to the initial model that included `loves_count`, which had an AUC of 1.0. The decision to exclude `loves_count` was made to avoid overfitting and ensure the model's predictions were reliable and generalizable.
 
 ![image](https://github.com/user-attachments/assets/35266775-5ccb-489f-b226-9b6c075fadc1)
