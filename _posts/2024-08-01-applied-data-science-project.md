@@ -94,10 +94,14 @@ After: 144 samples (balanced)
 **Random Forest and Decision Tree:**
 - Both models demonstrated strong performance with an accuracy of 70%.
 - Both struggled with predicting best-seller status due to class imbalance and overfitting issues.
+![image](https://github.com/user-attachments/assets/5531eb54-14e6-407e-b895-4db6ac893396)
+
+![image](https://github.com/user-attachments/assets/5b9f4065-c456-4dc7-b4fd-56a8b7ecbd47)
 
 **Logistics Regression:**
 - Simple and more explainable, while it has low accuracy of 60%.
 - Model struggled to capture non-linear relationships which affects model performance on best-seller prediction.
+![image](https://github.com/user-attachments/assets/cd8dfaf7-cca7-4755-af34-4855bf570aeb)
 
 **Model’s performance using key metrics:**
 The final model which utilized only `sentiment_score`, achieved an accuracy of 70%. This is in contrast to the initial model that included `loves_count`, which had an AUC of 1.0. The decision to exclude `loves_count` was made to avoid overfitting and ensure the model's predictions were reliable and generalizable.
