@@ -5,11 +5,16 @@ title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
 ## Project Background
-Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
-Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
-Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
-Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
-Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
+
+**Introduction**
+Founded in 1969 in Paris, Sephora is the global leader in beauty retail industry, offering a wide range of luxury skincare, makeup, hair care, and beauty tools. Sephora's success is driven by its commitment to personalized service and expert advice. In a competitive and saturated market, Sephora continues to differentiate through its unique brand identity and innovations in digital tools and personalized recommendations.
+
+**Group effort**
+Our group project aims to derive insights from customer satisfaction and sentiment by analysing reviews and features. Key focus includes identifying best-selling products, evaluating product effectiveness through reviews and ratings, and developing a recommendation system to enhance cross-selling, thereby maximising sales potential and improvng customer satisfaction.
+
+**Individual effort**
+Identify best-selling sunscreen products based on customer reviews and love counts.
+
 
 ## Work Accomplished
 Document your work done to accomplish the outcome
