@@ -178,11 +178,11 @@ Beside the diligent steps on data cleaning process to improve models training ac
 The comprehensive evaluation will help to ensure on model’s prediction to be as accurate as possible, therefore, a low-risk decision making. 
 
 **4. Accountability**
-In view of ethical consideration, models need to establish accountability and transparency in algorithms decision-making process.
+In view of ethical considerations, models need to establish accountability and transparency in the algorithmic decision-making process.
 
-For this project, we have document clearly on the processes which includes data preparation, model selection and model evaluation. 
+For this project, we have clearly documented the processes, including data preparation, model selection, and model evaluation.
 
-In the event when deployment of the model has been buy-in, standard protocols on monitoring model performance and address on issues would need to establish, thus, ensuring on accountability after rollout.
+In the event of model deployment, with buy-in from stakeholders, standard protocols for monitoring model performance and addressing issues would need to be established. This ensures ongoing accountability after rollout.
 
 **5. Transparency**
 From AI Singapore Community Code of Conduct, transparency is one of the six AI principles. To be transparent about AI processes, we first to understand them and be able to explain the reasoning behind the predictions and decisions.
@@ -192,6 +192,7 @@ In this project, Decision Tree has been selected as the alternative model under 
 **6. Overall Ethical Considerations**
 While in this project did not have direct involvement in handling of sensitive personal data, we need to consider AI ethics at every step, from data preparation to modeling / evaluation. The aim is to create a model that not only performs well whilst adhering to ethical standards at a global level.
 
+We also prioritized fairness and robustness in our model by carefully evaluating each feature to avoid biases and ensure that the model's predictions are reliable in real-world scenarios.
 
 ## Source Codes and Datasets
 Source code uploaded: https://github.com/jieyinglan/ITD214_Project.git
