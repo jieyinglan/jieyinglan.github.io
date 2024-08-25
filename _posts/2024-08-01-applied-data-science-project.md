@@ -168,6 +168,8 @@ Fairness is an important consideration when working on predicting the best-selle
 
 As highlighted earlier that one of the challenges on handling imbalance classes, we had applied SMOTE techniques to balance out the classes. The selected models are trained on resampled dataset, ensuring the model did not favour non best-sellers over best-sellers.
 
+To align with AI ethics principles, the exclusion of 'loves_count' was aim to minimize potential biases that could arise from using popularity metrics that might not accurately reflect product quality. This decision helps ensure that the model's predictions are fair and equitable across different products.
+
 **3. Accuracy**
 Ensuring the accuracy of predictions is crucial as inaccurate predictions can lead to implication such as forecasting of incorrect best-seller products, inventory overstock, lost sales, and poor customer satisfaction.
 
@@ -185,7 +187,7 @@ In the event when deployment of the model has been buy-in, standard protocols on
 **5. Transparency**
 From AI Singapore Community Code of Conduct, transparency is one of the six AI principles. To be transparent about AI processes, we first to understand them and be able to explain the reasoning behind the predictions and decisions.
 
-In this project, Decision Tree has been selected as the alternative model under the overall group conclusion. Reason being of the model interpretability where it allows us to explain how different features i.e. ‘loves_count’ and ‘sentiment_score’ has contribute to the prediction of a best-seller, making the decision-making process more transparent.
+In this project, Decision Tree has been selected as the alternative model under the overall group conclusion. The reason being its interpretability, where it allows us to explain how different features such as 'sentiment_score' as it contribute to the prediction of a best-seller, making the decision-making process more transparent.
 
 **6. Overall Ethical Considerations**
 While in this project did not have direct involvement in handling of sensitive personal data, we need to consider AI ethics at every step, from data preparation to modeling / evaluation. The aim is to create a model that not only performs well whilst adhering to ethical standards at a global level.
