@@ -13,7 +13,7 @@ Founded in 1969 in Paris, Sephora is the global leader in beauty retail industry
 Our group project aims to derive insights from customer satisfaction and sentiment by analysing reviews and features. Key focus includes identifying best-selling products, evaluating product effectiveness through reviews and ratings, and developing a recommendation system to enhance cross-selling, thereby maximising sales potential and improvng customer satisfaction.
 
 **Individual effort:**
-Identify best-selling sunscreen products based on customer reviews and love counts.
+To identify best-selling sunscreen products based on customer reviews and sentiment analysis
 
 
 ## Work Accomplished
@@ -33,7 +33,7 @@ In this group project, my focus is  on the Sunscreen category. By recommending b
 - Dropped rows with missing values in columns with less than 5% missing data.
 
 **Feature Engineering:**
-- Both `sentiment_score` and `loves_count` were considered as key features for predicting best-seller status. During model testing, it was found that the inclusion of `loves_count` resulted in an accuracy of 1.0, indicating an perfect model which is not realistic. This raised concerns about potential overfitting. After careful consideration, I decided to proceed with only `sentiment_score` as the primary feature for the final model, as it provided more realistic and reliable predictions.
+- Both `sentiment_score` and `loves_count` were originally considered as key features for predicting best-seller status. During model testing, it was found that the inclusion of loves_count resulted in an accuracy of 1.0, indicating a perfect model which is not realistic. This raised concerns about potential overfitting. After careful consideration, I decided to proceed with only `sentiment_score` as the primary feature for the final model, as it provided more realistic and reliable predictions.
 
 - Convert 'submission_time' column into Date & Time format and extract by year and month.
 - Convert text data into TF-IDF vectors to identify importance of a term from customer reviews.
@@ -66,7 +66,7 @@ Simple and straight-forward, easy to explain.
 Unable to handle non-linear dataset due to linearity of input & output variables.
 
 **Feature Engineering**
-I have experimented with both `sentiment_score` and `loves_count` as variable input. The inclusion of `loves_count` led to a perfect accuracy score (AUC = 1.0), which suggested that the model might be overfitting. To avoid this issue and to ensure that the model could generalize better to unseen data, I have decided to exclude `loves_count` and focus solely on `sentiment_score`to provided a more balanced and realistic model performance.
+I have experimented with both `sentiment_score` and `loves_count` as variable input. The inclusion of `loves_count` led to a perfect accuracy score (AUC = 1.0), which suggested that the model might be overfitting. To avoid this issue and to ensure that the model could generalize better to unseen data, I have decided to exclude 'loves_count' and focus solely on 'sentiment_score' to provide a more balanced and realistic model performance.
 
 **Training and Testing Data**
 - Split the data into 80/20 for training and testing for learning effectiveness.
@@ -77,14 +77,13 @@ After: 144 samples (balanced)
 ![image](https://github.com/user-attachments/assets/a96588cc-512b-44ff-95b3-ce53609567da)
 
 **Model Training**
-- All three models were trained on the resampled dataset using key features like product ID, love counts and sentiment score as the goals is to predict the binary outcome whether a Sunscreen product is a best-seller or not.
+- All three models were trained on the resampled dataset using key features like 'product ID' and 'sentiment score' as the goals is to predict the binary outcome whether a Sunscreen product is a best-seller or not.
 
 *- Final output ‘is_best_seller’ column:*
 
 ![image](https://github.com/user-attachments/assets/e87ced52-7e1a-45e1-9d78-79ba39f39798)
 
-- Monitor the relationship between ‘loves_count’ and ‘sentiment_score’ to the best-seller status, ensure that model captured the relevant patterns.
-  
+- Monitor the relationship between sentiment_score and the best-seller status to ensure that the model captured the relevant patterns.
 ![image](https://github.com/user-attachments/assets/e5d2e06e-fecd-42e6-9acb-228e9b26212b)
 
 
@@ -124,7 +123,7 @@ The final model which utilized only `sentiment_score`, achieved an accuracy of 7
   
 ![image](https://github.com/user-attachments/assets/b6b6d11b-4210-4b39-9918-f18b7ba8e376)
 
-- Customer Engagement: Strong correlation between ‘loves_count’ and ‘is_best_seller’ interprets that customer engagement is an important driver of product success.
+- Customer Engagement: The model interprets that customer engagement, as reflected in features like 'is_best_seller' is an important driver of product success.
   
 ![image](https://github.com/user-attachments/assets/175768af-b1bc-4076-b391-077579c9154e)
 
@@ -136,14 +135,14 @@ The final model which utilized only `sentiment_score`, achieved an accuracy of 7
 
 - Handling Class Imbalance: To address class imbalance more effectively, explore different resampling techniques.
 
-- The initial plan was considering to include both `sentiment_score` and `loves_count` as features. The inclusion of `loves_count` resulted in an AUC of 1.0, indicating potential overfitting. To enhance the model's generalizability, it is recommend focusing on optimizing solely on `sentiment_score`feature.
+- The initial plan included both sentiment_score and loves_count as features. However, the inclusion of 'loves_count' resulted in an AUC of 1.0, indicating potential overfitting. To enhance the model's generalizability, it is recommended to focus solely on optimizing the 'sentiment_score' feature.
 
 **2. Analysis of Business Impact**
 - Accurate prediction: The emphasis on importance of predicting best-sellers status for demand forecasting, optimizing inventory and to avoid missed sales opportunities.
 
-- Customer engagement as driver of product success: The analysis highlights the importance of customer engagement metrics like ‘loves_count’ and ‘merged_reviews’ in predicting product success. Integrated the insight collected to Sephora's strategy to improve customer satisfaction and drive sales.
+- The analysis highlights the importance of customer engagement metrics like 'merged_reviews' in predicting product success.
 
-- The exclusion of `loves_count` from the final model was a strategic decision aimed at ensuring the reliability and applicability of the predictions. While this decision may slightly limit the model's ability to leverage customer engagement data, it enhances the model's overall robustness. 
+- The focus on 'sentiment_score' as the primary feature in the final model was a strategic decision aimed at ensuring the reliability and applicability of the predictions.
 
 **3. Final Recommendations**
 - Random Forest is recommended as the primary model due to its overall robustness and high accuracy in handling complex data patterns.
